@@ -51,23 +51,56 @@ function last(arr, cb) {
   });
 
   //----------------------
+function add(num1,num2){
+  return num1 + num2;
+}
+
 
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback.
+
+  //console.log(cb)
+  return cb(x, y);
 }
+console.log(sumNums(2,2,add));
 
 //----------------------
+function multiply (num1, num2){
+  return num1 * num2;
+}
 
 function multiplyNums(x, y, cb) {
   // multiplyNums multiplies two numbers and passes the result to the callback.
+  //console.log(cb)
+  return cb(x, y);
 }
+
+console.log(multiplyNums(2,8,multiply));
 
 //----------------------
 
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
+
+
+function contains(item, list, cb) {
+  
 }
+
+if(list.includes(item)){
+  return cb(true);
+}
+else{
+  return cb(true);
+}
+};
+
+
+//hand to look up help for this
+
+
+
 
 //----------------------
 
