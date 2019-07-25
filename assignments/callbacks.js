@@ -31,10 +31,11 @@ function getLength(arr, cb) {
   function getLength(arr, cb) {
     return cb(arr);
   }
-
-  getLength(items.length, function(second){
+  const testFunc = function(second){
     console.log(second)
-  });
+  }
+
+  getLength(items.length,testFunc);
 
   //----------------------
 
@@ -71,7 +72,7 @@ function multiply (num1, num2){
 
 function multiplyNums(x, y, cb) {
   // multiplyNums multiplies two numbers and passes the result to the callback.
-  //console.log(cb)
+  //console.log(m)
   return cb(x, y);
 }
 
@@ -97,6 +98,7 @@ else{
 };
 
 
+
 //hand to look up help for this
 
 
@@ -111,3 +113,5 @@ function removeDuplicates(array, cb) {
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
 }
+
+
